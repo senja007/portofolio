@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <>
       {['xl'].map((expand) => (
-        <Navbar key={expand} bg="dark" variant="dark" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-3">
           <Container>
             <Navbar.Brand>Neon Code</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
