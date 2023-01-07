@@ -1,5 +1,5 @@
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
-import neoncode  from '../assets/img/neoncode.png';
+import Logo from '../assets/img/Logo'
 
 const NavBar = () => {
   return (
@@ -7,7 +7,7 @@ const NavBar = () => {
       {['xl'].map((expand) => (
         <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-3">
           <Container>
-            <Navbar.Brand> <img src={neoncode}/> </Navbar.Brand>
+            <Navbar.Brand> <Logo/> </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
