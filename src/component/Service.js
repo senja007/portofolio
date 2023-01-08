@@ -10,10 +10,10 @@ function Service() {
         <Card >
         <Card.Img variant="top" src={web} />
         <Card.Body>
-            <Card.Title>Web Developer </Card.Title>
-            <Card.Text>
-            Website taek a
-            </Card.Text>
+            <Card.Title>Web Developer</Card.Title>
+              <Card.Text>
+                Website taek a
+              </Card.Text>
             <Button variant="primary">Go</Button>
         </Card.Body>
         </Card>
@@ -21,9 +21,9 @@ function Service() {
         <Card.Img variant="top" src={uiux} />
         <Card.Body>
             <Card.Title>UI/UX Desaigner</Card.Title>
-            <Card.Text>
-            Desaign karepmu wes
-            </Card.Text>
+              <Card.Text>
+                Desaign karepmu wes
+              </Card.Text>
             <Button variant="primary">Go</Button>
         </Card.Body>
         </Card>
