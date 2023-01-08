@@ -10,6 +10,21 @@ export const Team = () => {
             name: "Lord Chanipan",
             skill: "Full Stack",
             pap: profil,
+        }, 
+        {
+            name: "Lord Senja",
+            skill: "Full Stack",
+            pap: profil,
+        }, 
+        {
+            name: "Lord Karim",
+            skill: "Full Stack",
+            pap: profil,
+        }, 
+        {
+            name: "Lord Dio",
+            skill: "Full Stack",
+            pap: profil,
         }
     ]
 
