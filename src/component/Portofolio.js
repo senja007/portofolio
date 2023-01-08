@@ -1,93 +1,58 @@
-import { Card, CardGroup, Carousel, Col, } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import React, { useState } from "react";
 import portof1 from "../assets/img/Project.jpg"
 
 export const Portofolio = () => {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max : 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: {max: 464, min: 0},
+            items: 1
+        }
     };
 
     return (
-        <section id="portofolio">
-            <Carousel variant="dark" activeIndex={index} onSelect={handleSelect} height={90} width={40}>
-                <Carousel.Item>
-                    <CardGroup>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                                <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
+        <section className="skill" id="portofolio">
+            <Container>
+                <Row>
+                    <Col size={12}>
+                        <div  className="skill-bx wow zoomIn">
+                            <h2>Our Portofolio</h2>
+                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                                <div className="item">
+                                    <img height={200} width={120} src={portof1} alt="portof1" />
+                                    <h1>Portofolio 1</h1>
+                                </div>
+                                <div className="item">
+                                    <img height={200} width={120} src={portof1} alt="portof2" />
+                                    <h1>Portofolio 2</h1>
+                                </div>
+                                <div className="item">
+                                    <img height={200} width={120} src={portof1} alt="portof3" />
+                                    <h1>Portofolio 3</h1>
+                                </div>
+                                <div className="item">
+                                    <img height={200} width={120} src={portof1} alt="portof4" />
+                                    <h1>Portofolio 4</h1>
+                                </div>
+                            </Carousel>
+                        </div>
                     </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                                <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                                <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    </CardGroup>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <CardGroup>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    </CardGroup>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <CardGroup>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Body>
-                            <img src={portof1} height={300} width={240} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    </CardGroup>
-                </Carousel.Item>
-            </Carousel>
+                </Row>
+            </Container>
         </section>
     );
 }
