@@ -30,23 +30,23 @@ export const Portofolio = () => {
                 <Row>
                     <Col size={12}>
                         <div  className="skill-bx wow zoomIn">
-                            <h2>Our Portofolio</h2>
+                            <h1>Our Portofolio</h1>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img height={200} width={120} src={portof1} alt="portof1" />
-                                    <h1>Portofolio 1</h1>
+                                    <h2>Portofolio 1</h2>
                                 </div>
                                 <div className="item">
                                     <img height={200} width={120} src={portof1} alt="portof2" />
-                                    <h1>Portofolio 2</h1>
+                                    <h2>Portofolio 2</h2>
                                 </div>
                                 <div className="item">
                                     <img height={200} width={120} src={portof1} alt="portof3" />
-                                    <h1>Portofolio 3</h1>
+                                    <h2>Portofolio 3</h2>
                                 </div>
                                 <div className="item">
                                     <img height={200} width={120} src={portof1} alt="portof4" />
-                                    <h1>Portofolio 4</h1>
+                                    <h2>Portofolio 4</h2>
                                 </div>
                             </Carousel>
                         </div>

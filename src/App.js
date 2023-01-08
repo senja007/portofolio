@@ -12,6 +12,7 @@ function App() {
       <Service />
       <br />
       <Portofolio />
+      <br />
       <Team />
     </div>
   );

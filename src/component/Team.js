@@ -36,7 +36,8 @@ export const Team = () => {
                         <TrackVisibility>
                             {({ isVisible }) => 
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <h2>Neon Code Team</h2>
+                                    <h1>Neon Code Team</h1>
+                                    <br />
                                     <Tab.Container id="teams-tabs" defaultActiveKey="first">
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                         <Tab.Pane eventKey="first">
