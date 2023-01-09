@@ -7,14 +7,13 @@ export default function Hero() {
     return (
         <section className="pt-0 hero" id="home">
             <div className="wave-container">
-                <div className="container">
-                
+                <div className="container">                
                 <div className="row align-item-center" style={{ width: "360" }}>
                     <Fade right delay={300}>
                         <div className="col-auto pr-5">
                             <h1 className="font-weight-bold my-5">
                                 NEON CODE TEAM
-                        </h1>
+                            </h1>
                             <p className="mb-5 text-hero font-weight-light text-gray w-80 mt-3">
                                 Memberikan Pelayan Memuaskan <br />
                                 Silakan buat Website anda di sini <br />
@@ -22,7 +21,7 @@ export default function Hero() {
                             </p>
                             <button className="btn btn-shop btn-primary" >
                                 Shop Now
-                        </button>
+                            </button>
                             <div className="row  icons-hero mt-100">
                                 <div className="col-auto icons">
                                     <i className="far fa-paper-plane icon"></i>
