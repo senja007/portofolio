@@ -121,3 +121,44 @@
   z-index: -4;
 }
 
+/* ========Contact Us======== */
+
+.contact {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.form-contact {
+  width: 730px;
+}
+
+.input-group {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.inputUser {
+  width: 240px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.inputEmail {
+  width: 240px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.inputNumber {
+  width: 240px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputDesc {
+  width: 240px;
+  height: 300px;
+  padding-left: 20px;
+}
