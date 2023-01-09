@@ -26,7 +26,6 @@ export const NavBar = () => {
   }
   return (
     <Router>
-
       <>
         {['xl'].map((expand) => (
           <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-0">
