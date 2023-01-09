@@ -85,7 +85,7 @@
 /* ========NavBar======== */
 nav.navbar {
   padding: 18px 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -99,6 +99,11 @@ nav.navbar {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.card-service {
+  display: flex;
+  gap: 32px ;
 }
 
 /* ========Portofolio======== */

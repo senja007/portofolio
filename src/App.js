@@ -6,6 +6,7 @@ import Service from "./component/Service"
 import Portofolio from "./component/Portofolio";
 import Team from "../src/component/Team";
 import Contact from "./component/Contact";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Portofolio />
       <Team />
       <Contact />
+      <Footer />
     </div>
   );
 }

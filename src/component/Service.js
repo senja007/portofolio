@@ -1,4 +1,4 @@
-import {Button, Card, CardGroup} from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import web from '../assets/img/web-developer.jpg'
 import uiux from '../assets/img/uiux.jpg';
 import '../App.css'
@@ -10,7 +10,7 @@ function Service() {
         <h2>Layanan Kami</h2>
         <p>services we provide include</p>
         <div className='list-service'>
-          <CardGroup style={{ width: '30rem' }}>
+          <div className='card-service' style={{ width: '30rem' }}>
               <Card >
               <Card.Img variant="top" src={web} />
               <Card.Body>
@@ -31,7 +31,7 @@ function Service() {
                   <Button variant="primary">Go</Button>
               </Card.Body>
               </Card>
-          </CardGroup>
+          </div>
         </div>
       </div>
     </section>
