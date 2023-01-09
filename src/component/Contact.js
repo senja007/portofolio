@@ -1,29 +1,34 @@
-import { Card, Form, InputGroup } from "react-bootstrap";
+import { Card, Form, FormControl } from "react-bootstrap";
+import React, { Component } from "react";
 
 export const Contact = () => {
     return (
         <section className="contact" id="contactus">
+            <div className="contact-box">
             <Card className="form-contact">
                 <h1>Contact Us</h1>
                 <div className="input-group">
                     <div className="inputUser">
                         <Form.Label className="label-contact">Username</Form.Label>
-                        <Form.Control type="text" />
+                        <input type="text"></input>
                     </div>
                     <div className="inputEmail">
                         <Form.Label className="label-contact">Email</Form.Label>
-                        <Form.Control type="email" />
+                        <input type="email"></input>
                     </div>
                     <div className="inputNumber">
                         <Form.Label className="label-contact">No Telepon</Form.Label>
-                        <Form.Control type="number" />
+                        <input type="text"></input>
                     </div>
                 </div>
-                <div>
-                    <Form.Label className="label-contact">Description</Form.Label>
-                    <Form.Control  className="inputDesc" type="paragraph" />
+                <div className="input-group">
+                    <div className="inputDesc">
+                        <Form.Label className="label-contact">Description</Form.Label>
+                        <textarea className="desc-box"></textarea>
+                    </div>
                 </div>
             </Card>
+            </div>
         </section>
     )
 }
