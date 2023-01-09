@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto';
 }
 
 .wave-container {  
@@ -46,9 +47,6 @@
     height: 45px;
     border-radius: 4px;
 }
-
-
-   
 
 .App-logo {
   height: 40vmin;
@@ -99,10 +97,6 @@
   position: relative;
 }
 
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
 .skill p {
     color: #B8B8B8;
     font-size: 18px;
