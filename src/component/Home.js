@@ -5,7 +5,7 @@ import '../App.css'
 
 export default function Hero() {
     return (
-        <section className="pt-0 hero">
+        <section className="pt-0 hero" id="home">
             <div className="wave-container">
                 <div className="container">
                 
