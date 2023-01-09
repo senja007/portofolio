@@ -20,8 +20,8 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div>
-                        <Form.Label className="label-contact">Description</Form.Label>
-                        <Form.Control  className="inputDesc" type="paragraph" />
+                    <Form.Label className="label-contact">Description</Form.Label>
+                    <Form.Control  className="inputDesc" type="paragraph" />
                 </div>
             </Card>
         </section>
