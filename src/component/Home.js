@@ -57,7 +57,7 @@ export default function Hero() {
                     <div className="col-1 offset-md-2 pl-0 hero-img">
                         <Fade bottom delay={350}>
                             <div >
-                                <img src={HeroImg} alt="my-hero" height={540}/>
+                                <img src={HeroImg} alt="my-hero" height={560}/>
                             </div>
                         </Fade>
                     </div>
