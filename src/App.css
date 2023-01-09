@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto';
 }
 
 .App-logo {
@@ -45,25 +46,9 @@
   flex-wrap: wrap;
 }
 
-h1 {
-  font-family: 'Roboto';
-  font-size: 45px;
-	font-weight: 700;
-}
-
-h2 {
+.item h2{
   font-family: serif;
-  font-size: 30px;
-}
-
-h3 {
-  font-family: 'Roboto';
   font-size: 20px;
-}
-
-h4 {
-  font-family: serif;
-  font-size: 15px;
 }
 
 .skill {
