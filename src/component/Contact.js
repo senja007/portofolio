@@ -2,7 +2,7 @@ import { Card, Form, InputGroup } from "react-bootstrap";
 
 export const Contact = () => {
     return (
-        <section className="contact" id="Contact">
+        <section className="contact" id="contactus">
             <Card className="form-contact">
                 <h1>Contact Us</h1>
                 <div className="input-group">
