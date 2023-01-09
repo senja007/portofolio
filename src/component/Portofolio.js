@@ -30,7 +30,7 @@ export const Portofolio = () => {
                 <Row>
                     <Col size={12}>
                         <div  className="skill-bx wow zoomIn">
-                            <h1>Our Portofolio</h1>
+                            <h2>Our Portofolio</h2>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img height={200} width={120} src={portof1} alt="portof1" />
