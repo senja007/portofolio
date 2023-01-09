@@ -29,7 +29,7 @@ export const NavBar = () => {
 
       <>
         {['xl'].map((expand) => (
-          <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-3">
+          <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-0">
             <Container>
               <Navbar.Brand> <Logo/> </Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
