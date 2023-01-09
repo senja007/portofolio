@@ -14,7 +14,7 @@ export const Team = () => {
     ]
 
     return (
-        <section className="project" id="team">
+        <section className="team" id="team">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -22,7 +22,7 @@ export const Team = () => {
                             {({ isVisible }) => 
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Neon Code Team</h2>
-                                    <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                                    <Tab.Container id="teams-tabs" defaultActiveKey="first">
                                         
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                             <Tab.Pane eventKey="first">
