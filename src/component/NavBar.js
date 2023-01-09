@@ -6,6 +6,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [language, setLanguage] = useState('english');
+
+  const handleLanguageChange = () => {
+    if (language === 'english') {
+      setLanguage('indonesian');
+    } else {
+      setLanguage('english');
+    }
+  }
 
   useEffect(()=> {
       const onScroll=()=>{
@@ -49,6 +58,7 @@ export const NavBar = () => {
                     <Nav.Link href="#portofolio" className={activeLink === 'portofolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('portofolio')}>Portofolio</Nav.Link>
                     <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>Team</Nav.Link>
                     <Nav.Link href="#contactus" className={activeLink === 'contactus' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contactus')}>Contact Us</Nav.Link>                
+                    <button onClick={handleLanguageChange}>Toggle Language</button>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
