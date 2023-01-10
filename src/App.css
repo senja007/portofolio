@@ -3,6 +3,8 @@
   font-family: 'Roboto';
 }
 
+/* ini adalah css background gelombang pada home */
+
 .wave-container {  
   height: 70vh;
   background-color: #a3acff;
@@ -28,6 +30,7 @@
   }  
 }
 
+/* ini adalah ccs untuk gambar karakter di dalam home */
 
 .hero {
     min-height: 560px;
@@ -41,6 +44,8 @@
     color: gray-700;
     line-height: 30px;
 }
+
+/* ini adalah button pada home */
 
 .btn-shop {
     width: 170px;
