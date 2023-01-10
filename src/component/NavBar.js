@@ -2,19 +2,12 @@ import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
 import Logo from '../assets/img/Logo';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Switch from 'react-switch';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  const [language, setLanguage] = useState('english');
-
-  const handleLanguageChange = () => {
-    if (language === 'english') {
-      setLanguage('indonesian');
-    } else {
-      setLanguage('english');
-    }
-  }
+  const [isOn, setIsOn] = useState(false);  
 
   useEffect(()=> {
       const onScroll=()=>{
@@ -37,7 +30,7 @@ export const NavBar = () => {
     <Router>
       <>
         {['xl'].map((expand) => (
-          <Navbar key={expand} bg="light" variant="light" expand={expand} className="mb-0">
+          <Navbar key={expand} expand={expand} className="mb-0">
             <Container>
               <Navbar.Brand> <Logo/> </Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -58,7 +51,10 @@ export const NavBar = () => {
                     <Nav.Link href="#portofolio" className={activeLink === 'portofolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('portofolio')}>Portofolio</Nav.Link>
                     <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>Team</Nav.Link>
                     <Nav.Link href="#contactus" className={activeLink === 'contactus' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contactus')}>Contact Us</Nav.Link>                
-                    <button onClick={handleLanguageChange}>Toggle Language</button>
+                    <Switch
+                      onChange={() => setIsOn(!isOn)}
+                      checked={isOn}
+                    />
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
