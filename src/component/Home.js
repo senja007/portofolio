@@ -15,9 +15,9 @@ export default function Hero() {
                                 NEON CODE TEAM
                             </h1>
                             <p className="mb-5 text-hero font-weight-light text-gray w-80 mt-3">
-                                Memberikan Pelayan Memuaskan <br />
-                                Silakan buat Website anda di sini <br />
-                                dengan gaya dan mempesona
+                                Providing Satisfying Service <br />
+                                with style and charm <br />
+                                Please create your website here. 
                             </p>
                             <button className="btn btn-shop btn-primary" >
                                 Shop Now
