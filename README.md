@@ -1,37 +1,35 @@
-# Getting Started with Create node_modul
+# Portofolio Team Neon Code
 
-`npm i` for npm (or) `yarn` for yarn 
+ini adalah portofolio team Neon Code. kalian boleh ambil jangan lupa tetap cantumkan copyright
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+portofolio ini di bangun menggunakan react . kalian install node_modul.
 
-### `npm start` or `yarn start`
+```bash
+`npm install` FOR NPM {or} `yarn` FOR YARN
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```python
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# (yarn start) or (npm start)
+for run your website
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please make sure to update tests as appropriate.
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[MIT](https://choosealicense.com/licenses/mit/)
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
