@@ -1,6 +1,6 @@
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
 import Logo from '../assets/img/Logo';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Switch from 'react-switch';
 
