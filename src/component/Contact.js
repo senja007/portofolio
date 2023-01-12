@@ -33,7 +33,7 @@ export const Contact = () => {
                 </div>
             </Card>
             <Card className="pict">
-                <img src={peeking} alt="peek"/>
+                <img className="peek" src={peeking} alt="peek"/>
             </Card>
             </div>
         </section>
