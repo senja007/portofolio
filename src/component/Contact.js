@@ -1,5 +1,6 @@
 import { Card, Form, FormControl } from "react-bootstrap";
 import React, { Component } from "react";
+import peeking from '../assets/img/peeking.png';
 
 export const Contact = () => {
     return (
@@ -26,7 +27,13 @@ export const Contact = () => {
                         <Form.Label className="label-contact">Description</Form.Label>
                         <textarea className="desc-box"></textarea>
                     </div>
+                    <div className="send">
+                        <button >Send</button>
+                    </div>
                 </div>
+            </Card>
+            <Card className="pict">
+                <img src={peeking} alt="peek"/>
             </Card>
             </div>
         </section>

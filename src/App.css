@@ -3,8 +3,6 @@
   font-family: 'Roboto';
 }
 
-/* ini adalah css background gelombang pada home */
-
 .wave-container {  
   height: 70vh;
   background-color: #a3acff;
@@ -30,7 +28,6 @@
   }  
 }
 
-/* ini adalah ccs untuk gambar karakter di dalam home */
 
 .hero {
     min-height: 560px;
@@ -44,8 +41,6 @@
     color: gray-700;
     line-height: 30px;
 }
-
-/* ini adalah button pada home */
 
 .btn-shop {
     width: 170px;
@@ -227,36 +222,33 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.8px;
 }
 /* ========Contact Us======== */
-
 .contact {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 450px;
+}
+.contact-box {  
+  height: 70vh;
+  background-color: #FFFFFF;
   position: relative;
+  display: flex;
 }
 
-.contact{
-  height: 500px;
-  background-color: #ffffff;
-  position: relative;
-}
-
-.contact::before {
+.contact-box::before {   
   content: "";
   width: 100%;
-  height: 800px;
+  height: 180px;
   position: absolute;
   bottom: -0.3%;
   left: 0;
   background-size: auto;
   background-repeat: repeat no-repeat;
-  background-position: 91vw bottom;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg%27%3E<path d='M0 0C22.4434 -1 28.9842 2 55 24C94.1849 54 121.997 57 158.5 58C198.5 60 200 44 240 52C280 59 320 89 360 89C400 89 440 59 480 54C520 49 560 69 600 84C640 99 680 109 720 114C760 119 800 119 840 104C880 89 920 59 960 62C1000 64 1040 99 1080 94C1120 89 1127.5 59 1147.5 37C1171.48 11 1185.65 0 1200 0V134H1180C1160 134 1120 134 1080 134C1040 134 1000 134 960 134C920 134 880 134 840 134C800 134 760 134 720 134C680 134 640 134 600 134C560 134 520 134 480 134C440 134 400 134 360 134C320 134 280 134 240 134C200 134 160 134 120 134C80 134 40 134 20 134H0V0.0103865Z' fill='%23a3acff'/></svg>");
+  background-position: 67vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 88' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 1 55 15C94.1849 36 121.997 37 158.5 38C198.5 39 200 29 240 34C280 39 320 58 360 58C400 58 440 39 480 36C520 32 560 45 600 55C640 65 680 72 720 75C760 78 800 78 840 68C880 58 920 39 960 40C1000 42 1040 65 1080 62C1120 58 1127.5 39 1147.5 24C1171.48 7 1185.65 0 1200 0V88H1180C1160 88 1120 88 1080 88C1040 88 1000 88 960 88C920 88 880 88 840 88C800 88 760 88 720 88C680 88 640 88 600 88C560 88 520 88 480 88C440 88 400 88 360 88C320 88 280 88 240 88C200 88 160 88 120 88C80 88 40 88 20 88H0V0.0103865Z' fill='%23a3acff'/></svg>");
 }
 
 @media(max-width:850px) {
-  .contact::before {
-    height: 43px
-  }
+  .contact-box::before {    
+    height:40px
+  }  
 }
 
 .contact h1 {
@@ -316,12 +308,34 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-radius: 8px;
 }
 
+.send {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.send button {
+  border-radius: 6px;
+  width: 60px;
+}
+
+.card.pict {
+  width: 600px;
+  height: 300px;
+  align-items: center;
+  border: 0;
+}
+
+.card img {
+  padding-top: 120px;
+  width: 420px;
+}
+
 /* Footer */
 
 .footer{
   padding: 5px;
   background-color: #a3acff;
-  position: static;
+  position: flex;
   width: 100%;
   height: 40px;
   font-size: 16px;
